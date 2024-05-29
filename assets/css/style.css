@@ -1,0 +1,285 @@
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+/* Set Scrolling Behavior */
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+	  line-height: 1.5;
+	  color: #000000;
+	  background: #f2f2f2;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+.wrapper {
+	  margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+/* Style Headers */
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: Bitter, serif;
+    font-weight: 500;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+  h2 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+  h3 {
+    font-size: 1.5px;
+    letter-spacing: 0px;
+  }
+  h4 {
+    font-size: 1.5px;
+    letter-spacing: 0.25px;
+  }
+  h5 {
+    font-size: 24px;
+    letter-spacing: 0.25px;
+  }
+  h6 {
+    font-size: 20px;
+    letter-spacing: 0.25px;
+  }
+
+
+
+
+/* Styles for header section */
+
+#nav-title {
+  margin-right: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  margin: 10px 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+header li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px 20px;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: #555;
+    transition: all 0.3s ease 0s;
+}
+
+header a:hover {
+    color: #b2dfdb;
+    padding-bottom: 10px;
+    border-bottom: #000000 2px solid;
+}
+
+/* Styles for About Me Section */
+
+.headshot {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    float: right;
+}
+.content {
+    padding: 20px;
+}
+
+/* Styles for main content */
+
+
+.row {
+	  flex-wrap: wrap;
+	  display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+
+.col-25 {
+    padding: 10px 20px 0 0;
+	  width: 25%;
+    text-align: end;
+    box-sizing: border-box;
+    border-right:#000000 2px solid;
+}
+
+.col-75 {
+	  width: 75%;
+    padding: 10px 0 0 20px;
+    box-sizing: border-box;
+}
+
+
+.col-100 {
+	width: calc(100% - 30px);
+}
+
+/* Styling elements for Work Section */
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.item {
+    flex: 1 1 50%;
+    position: relative;
+    box-sizing: border-box;
+    max-height: 400px;
+  }
+
+
+.item:first-child {
+  width: 100%;
+  flex: 2 1 100%;
+  }
+
+.item img {
+  max-width: 100%;
+  padding: 10px;
+  }
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 50%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: left;
+}
+
+.item:hover .overlay {
+  opacity: 1;
+}
+
+
+/* Styles for Footer section and links */
+
+.footer a {
+  text-decoration: none;
+  color: #555;
+  transition: all 0.3s ease 0s;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.footer li {
+  list-style: none;
+  display: inline-block;
+  padding: 20px 20px;
+  align-items: center;
+}
+
+.footer a:hover {
+  color: #b2dfdb;
+  padding-bottom: 10px;
+  border-bottom: #000000 2px solid;
+}
+
+/* Modified Styles for Smaller Viewports */
+
+@media screen and (max-width: 800px) {
+
+header {
+  flex-direction: column;
+}
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.flex-container {
+  flex-direction: column;
+  width: 100%;
+  padding: 5px;
+}
+
+.col-25 {
+  width: 100%;
+  flex-direction: column;
+  text-align: left;
+  padding: 0 0 0 10px;
+}
+
+.col-75 {
+  width: 100%;
+}
+
+.footer  li {
+    display: block;
+    padding: 0px;
+      }
+
+footer {
+  width: 100%;
+}
+
+header li {
+    display: block;
+    padding: 0px;
+  }
+
+.headshot {
+    float: none;
+  }
+
+}
+
