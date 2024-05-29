@@ -1,7 +1,5 @@
 # portfolio
 Module 2 Challenge
-# portfolio
-Module 2 Challenge
 # Advanced CSS Challenge: Professional Portfolio
 
 ## Description
@@ -32,8 +30,8 @@ To view project, navigate to https://rmburgos.github.io/portfolio/
 
 
 ## Usage
+![rachelburgos_portfolio](https://github.com/rmburgos/portfolio/assets/97217944/bb843e8f-ff6d-4f48-a592-4d534d64300e)
 
-![module2_challenge](https://github.com/rmburgos/portfolio)
 
 ## Built With
 * CSS
